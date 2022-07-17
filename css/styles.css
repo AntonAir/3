@@ -10,8 +10,8 @@
 
   /* цвет фона */
 
-
 }
+
 
 body {
   font-family: var(--font-main);
@@ -19,7 +19,6 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--color-main);
-
 }
 
 button {
@@ -42,6 +41,31 @@ button {
   color: var(--color-title);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* header */
 
 .logo {
@@ -51,6 +75,7 @@ button {
   line-height: 1.19;
 
   color: var(--color-accent);
+
 }
 
 .logo-black {
@@ -87,9 +112,11 @@ button {
 
 .hero {
   background-color: #2F303A;
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -101,6 +128,9 @@ button {
 }
 
 .hero-button {
+  width: 200px;
+  height: 50px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -111,15 +141,27 @@ button {
 
   color: #FFFFFF;
   background-color: var(--color-accent);
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 /* benefits */
 
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .benefits-title {
   visibility: hidden;
+  height: 0;
 }
 
 .benefits-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -133,10 +175,45 @@ button {
 }
 
 /* services */
+.servise {
+  margin-bottom: 94px;
+}
+
+.servise-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
 
 /* team */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-item {
+  width: 270px;
+  height: 368px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  text-align: center;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
 
 .team-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -152,10 +229,15 @@ button {
 /* footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2F303A;
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   font-family: var(--font-logo);
   font-weight: 700;
   font-size: 26px;
@@ -166,6 +248,10 @@ button {
 
 .footer-logo-white {
   color: #FFFFFF;
+}
+
+.footer-item {
+  margin-bottom: 10px;
 }
 
 .footer-link {
