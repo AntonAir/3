@@ -21,6 +21,30 @@ body {
   color: var(--color-main);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 button {
   cursor: pointer;
 }
@@ -41,23 +65,7 @@ button {
   color: var(--color-title);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
-ul,
-ol {
-  padding-left: 0%;
-}
 
 .container {
   width: 1200px;
@@ -391,10 +399,6 @@ ol {
 
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
-
-.portfolio-img {
-  margin-bottom: -4px;
 }
 
 .portfolio-description {
