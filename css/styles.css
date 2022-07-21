@@ -47,6 +47,7 @@ img {
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
 .list {
@@ -65,13 +66,30 @@ button {
   color: var(--color-title);
 }
 
-
-
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -153,6 +171,9 @@ button {
 /* hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: #2F303A;
   text-align: center;
 }
@@ -170,8 +191,7 @@ button {
 }
 
 .hero-button {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
 
   font-weight: 700;
   font-size: 16px;
@@ -190,16 +210,6 @@ button {
 }
 
 /* benefits */
-
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.benefits-title {
-  visibility: hidden;
-  height: 0;
-}
 
 .benefits-list {
   display: flex;
@@ -230,7 +240,7 @@ button {
 
 /* services */
 .servise {
-  margin-bottom: 94px;
+  padding-top: 0;
 }
 
 .servise-title {
@@ -248,8 +258,6 @@ button {
 
 /* team */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
 
   background-color: #f5f4fa;
 }
@@ -266,8 +274,6 @@ button {
 .team-item {
 
   width: 270px;
-  height: 368px;
-  padding-bottom: 30px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -279,8 +285,9 @@ button {
   margin-left: 30px;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-subtitle {
@@ -322,7 +329,7 @@ button {
   color: #FFFFFF;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -341,16 +348,6 @@ button {
 
 /* portfolio */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.portfolio-title {
-  visibility: hidden;
-  height: 0;
-}
-
 .list-btn {
   display: flex;
   justify-content: center;
@@ -363,7 +360,7 @@ button {
 
 .list-btn-link {
   padding: 6px 22px;
-  border: 0;
+
 
   font-family: var(--font-main);
   font-weight: 500;
@@ -409,6 +406,8 @@ button {
 }
 
 .portfolio-subtitle {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
